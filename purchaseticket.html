@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title>Cinemania - Purchase Ticket Online</title>
+    <link rel="stylesheet" href="stylepurchase.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="script2.js"></script>
+</head>
+<body>	
+	<nav>
+	<label class="logo">Cinemania</label>
+		<ul>
+		    <li><a href="viewmovie.html">View Movies</a></li>
+			<li><a href="viewtrailer.html">View Trailer or Cinema Info</a></li>
+			<li><a href="purchaseticket.html">Purchase Ticket Online</a></li>
+		</ul>
+     </nav>
+
+<br><br><br>
+<div class="wrapper">
+	 <h2>Box Office</h2>
+	<div id="error_message"></div>
+		
+	<form id="myform" onsubmit="return validation()" action="mailto:fin2304162@xmu.edu.my" method="post" enctype="text/plain">
+
+	
+	<div class="input_field">
+		<input type="text" placeholder="Full Name" id="name" name="name">
+		</div>
+	<div class="input_field">
+		<input type="text" placeholder="Email" id="email" name="email">
+		</div>
+	<div class="input_field">
+		<input type="text" placeholder="Phone" id="phone" name="phone">
+		</div>
+	<div class="input_field">
+       <select placeholder="Cinema" id="cinema" name="cinema">
+       <option value ="Cinema">Cinema</option>
+       <option value ="PavilionKL">Pavilion Kuala Lumpur</option>
+       <option value ="MidValleyMegamall">Mid Valley Megamall</option>
+       <option value ="IOICityMall">IOI City Mall</option>
+       <option value ="SunwayPyramid">Sunway Pyramid</option>
+       </select>
+		</div>
+	<div class="input_field">
+       <select placeholder="Movie" id="movie" name="movie">
+       <option value ="Movie">Movie</option>
+       <option value ="Aquaman">Aquaman</option>
+       <option value ="AvengersEndgame">Avengers: Endgame</option>
+       <option value ="DespicableMe3">Despicable Me 3</option>
+       <option value ="TheConjuring">The Conjuring</option>
+       </select>
+		</div>
+	<div class="input_field">
+      <select placeholder="Date" id="date" name="date">
+      <option value ="Date">Date</option>
+      <option value ="5January">05/01</option>
+      <option value ="6January">06/01</option>
+      <option value ="7January">07/01</option>
+      <option value ="8January">08/01</option>
+      </select>
+		</div>
+    <div class="input_field">
+      <select placeholder="Time" id="time" name="time">
+      <option value ="Time">Time</option>
+      <option value ="1000am">10:00am</option>
+      <option value ="0100pm">01:00pm</option>
+      <option value ="0400pm">04:00pm</option>
+      <option value ="0700pm">07:00pm</option>
+	  <option value ="1000pm">10:00pm</option>
+      </select>
+		</div>
+	<div class="input_field">
+		<textarea type="text" placeholder="Number of People Watching (Please Enter A Valid Number)" id="number" name="number"></textarea>
+		</div>
+	<div class="btn">
+		<input type="submit">
+		 </div>
+		
+		
+		
+	</form>	
+	
+	</div>
+
+</body>

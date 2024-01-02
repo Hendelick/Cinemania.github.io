@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family: 'poppins', sans-serif;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	
+}
+label.logo{
+	color: #F5F5F5;
+	font-size: 20px;
+	line-height: 60px;
+	padding: 0;
+	margin: 0;
+	font-weight: 500;
+	margin-left: 100px;
+}
+nav{
+	height: 65px;
+	background: #242424;
+	box-shadow: 0 10px 15px rgba(0,0,0,0,.1);
+}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li{
+	background: #242424;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li a{
+	display: block;
+	padding: 0 15px;
+	color: white;
+	text-decoration: none;
+	line-height: 60px;
+	font-size: 20px;
+}
+
+nav ul li a:hover{
+	background: #243342;
+}
+nav ul ul{
+	position: absolute;
+	top: 60px;
+	display: none;
+}
+
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul li{
+	width: 290px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+	
+
+
+
+
+div.box{
+	background-image: url(movie5.webp);
+	padding: 260px 100px;
+	background-position: center;
+	background-size: cover;
+	
+}
+
+div.unique{
+	margin-left: 380px;
+	font-size: 50px;
+	color: white;
+	font-weight: 650;
+}
+
+div.trailer{
+	margin-left: 200px;
+	max-width: 1100px;
+	margin-top: 50px;
+}
+
+div.title{
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-size: 20px;
+	
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+h2{
+
+	margin-bottom: 10px;
+}
+
+div.source{
+	font-size: 10px;
+	margin-bottom: 50px;
+}

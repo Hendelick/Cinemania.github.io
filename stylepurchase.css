@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family: 'poppins', sans-serif;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+	
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+label.logo{
+	color: #F5F5F5;
+	font-size: 20px;
+	line-height: 60px;
+	padding: 0;
+	margin: 0;
+	font-weight: 500;
+	margin-left: 100px;
+}
+nav{
+	height: 65px;
+	background: #242424;
+	box-shadow: 0 10px 15px rgba(0,0,0,0,.1);
+}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li{
+	background: #242424;
+	position: relative;
+	list-style: none;
+	display: inline-block;
+}
+
+nav ul li a{
+	display: block;
+	padding: 0 15px;
+	color: white;
+	text-decoration: none;
+	line-height: 60px;
+	font-size: 20px;
+}
+
+nav ul li a:hover{
+	background: #243342;
+}
+nav ul ul{
+	position: absolute;
+	top: 60px;
+	display: none;
+}
+
+nav ul li:hover > ul{
+	display: block;
+}
+nav ul ul li{
+	width: 290px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+.wrapper{
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 350px;
+	width: 100%;
+	background: white;
+	padding: 25px;
+	border-radius: 20px;
+	box-shadow: 4px 4px 8px rgba(131, 129, 126);
+}
+.wrapper h2{
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: #000000;
+}
+.wrapper .input_field input[type="text"],
+.wrapper .input_field select	,
+
+.wrapper textarea{
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+	color: #434242;
+}
+
+.wrapper .input_field input[type="date"],
+.wrapper textarea{
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+	font-family: 'poppins', sans-serif;
+	color: #434242;
+
+}
+
+
+.wrapper textarea{
+	height: 80px;
+	resize: none;
+}
+.wrapper .btn input[type="submit"]{
+	border: 0;
+	margin-top: 15px;
+	padding: 10px;
+	width: 100%;
+	background: #F08080;
+	color: #B22222;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	border-radius: 25px;
+	cursor: pointer;
+}
+
+.wrapper #error_message{
+	margin-bottom: 20px;
+	padding: 0px;
+	background: #fe8b8e;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5s ease;
+}
